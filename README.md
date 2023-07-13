@@ -1,2 +1,6 @@
 # To-do
 These is a sample of To-do application...
+
+In thsee a person can login ,create user, add title, tasks, contact us form , etc 
+There are many activites in these web application done by django
+...
