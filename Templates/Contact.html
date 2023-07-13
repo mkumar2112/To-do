@@ -1,0 +1,59 @@
+{% extends 'index_2.html' %}
+{% comment %}  {% endcomment %}
+  
+{% block title %} 
+Contact
+{% endblock title %}
+
+{% block body %} 
+
+{% if messages %}
+{% for message in messages %}
+<div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+  {{ message }}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{% endfor %}
+{% endif %}
+
+<form class="row g-3 mx-5" method='post' action='/contact' style="position:absolute;top:15%;left:20%;width:700px;border-width:medium">
+    {% csrf_token %}
+      <div class="row my-4">
+          <div class="col">
+            <input type="text" class="form-control px-20 " placeholder="First name" name='First_name' aria-label="First name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Last name" name='Last_name' aria-label="Last name">
+          </div>
+        </div>
+    <div class="col-md-6">
+      <input type="email" name='Email' class="form-control" id="inputEmail4" placeholder='Email-Id'>
+    </div>
+    <div class="col-12">
+      <input type="text" class="form-control"  name='Address_1' id="inputAddress" placeholder="Address">
+    </div>
+    <div class="col-12">
+      <input type="text" class="form-control"  name='Address_2' id="inputAddress" placeholder="Near By">
+    </div>
+    <div class="col-md-6">
+      <input type="text"  name='City' placeholder='City' class="form-control" id="inputCity">
+    </div>
+    <div class="col-md-4">
+        <select id="inputState"  name='State' class="form-select">
+          <option selected>State</option>
+          <option >Delhi</option>
+          <option >Maharastra</option>
+          <option >UP</option>
+          <option >Haryana</option>
+          <option >Uttarkhand</option>
+        </select>
+    </div>
+    <div class="col-md-2">
+      <input type="text"  name='Zip' placeholder='Zip Code' class="form-control" id="inputZip">
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary" style"position:absolute;margin:10px 100px">Submit</button>
+    </div>
+  </form>
+
+{% endblock body %}

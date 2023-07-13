@@ -1,0 +1,18 @@
+1. add_note.html -> Show the saved Tasks and give link for adding more tasks.
+
+2. app.html -> Add task and title.
+
+3. Contact.html -> Contact us form to give user contact so we will reach him.
+
+4. Create_user.html -> Create User Form for creation of user for accessing the tasks.
+
+5. home.html -> The Home page where everything going to start.
+
+6. index_2.html -> Giving nav-bars to logged in user.
+
+7. index.html ->Giving nav-bars to log-out user..
+
+8. login.html -> Logging page to user to login.
+
+8. Thanks.html -> Thanks note page , Thaning you to enter your contact.
+

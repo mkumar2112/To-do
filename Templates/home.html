@@ -1,0 +1,29 @@
+{% extends 'index.html' %}
+
+{% block title %}
+        Home
+        {% endblock title %}
+
+{% comment %} <style>
+    .btn-primary {
+        color:pink;
+        width: 120px;
+        background-color:DodgerBlue;
+        position: absolute;
+        top: 60%;
+        left: 25%;
+        padding:10px;
+        font-size:20;
+        margin:;
+    }
+</style> {% endcomment %}
+
+
+{% block body %}
+<a class="btn btn-primary" style="color:White;position:absolute;top:50%;left: 16%;width: 100px;" href="/login">Login</a>
+
+<div class="card" width="50" height="200"  style="color:white;position:absolute;top:15%;left:40%;width:700px" >
+    <img src="/static/Photos/2.jpg"  width="600" height="400" class="card-img-top" alt="...">
+  </div>
+
+{% endblock body %}
